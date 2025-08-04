@@ -36,15 +36,24 @@ public class Game extends Platform implements IGame {
 
     /*-------------------- Methods --------------------*/
     @Override
-    public void showDetails() {
-        System.out.printf(
+    public String showDetails() {
+
+        return String.format(
                 """
                 Name: %s
                 Genre: %s
                 Price: %.2f
                 Platform: %s
                 Company: %s
-                """,name, genre, price, getPlatform(), getCompany()
+                """,name, genre, price, getPlatform(), getCompany());
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                """
+                \nGame{Name: %s | Genre: %s | Price: %.2f | Company: %s | Platform: %s}
+                """,name, genre, price, getCompany(), getPlatform()
         );
     }
 }

@@ -5,5 +5,5 @@ public interface IGame {
     String genre = "";
     double price = 0d;
 
-    void showDetails();
+    String showDetails();
 }

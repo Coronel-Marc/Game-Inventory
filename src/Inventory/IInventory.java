@@ -8,6 +8,6 @@ public interface IInventory {
 
     void addGame(Game g);
     void deleteGame(int index);
-    void showGame(int index);
-    void showList();
+    String showGame(int index);
+    String showList();
 }

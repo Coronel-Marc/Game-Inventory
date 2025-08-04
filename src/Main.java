@@ -14,12 +14,21 @@ public class Main {
         game.setCompany("EA GAMES");
         game.setPlatform("Console");
 
+        Game game2 = new Game();
+        game2.setName("Elden Ring");
+        game2.setGenre("Dark Fantasy");
+        game2.setPrice(55.60);
+        game2.setCompany("Bandai Namco");
+        game2.setPlatform("Console, PC");
+
+
         game.showDetails();
         System.out.println("-----------------");
 
         Inventory inventory = new Inventory();
         inventory.addGame(game);
-        inventory.showGame(0);
-        inventory.showList();
+        inventory.addGame(game2);
+        //System.out.println(inventory.showGame(0));
+        System.out.println(inventory.showList());
     }
 }

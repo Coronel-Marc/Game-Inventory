@@ -4,6 +4,7 @@ import Inventory.Game.Game;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Inventory implements IInventory{
 
@@ -16,23 +17,26 @@ public class Inventory implements IInventory{
 
     @Override
     public void addGame(Game g) {
+
         gamesList.add(g);
     }
 
     @Override
     public void deleteGame(int index) {
+
         gamesList.remove(index);
     }
 
     @Override
-    public void showGame(int index) {
-        System.out.println(gamesList.get(index));
+    public String showGame(int index) {
+        return gamesList.get(index).showDetails();
 
 
     }
 
     @Override
-    public void showList() {
-        System.out.println(gamesList.listIterator().toString());
+    public String showList() {
+
+        return gamesList.toString();
     }
 }
