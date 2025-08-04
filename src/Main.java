@@ -1,4 +1,7 @@
 import Inventory.Game.Game;
+import Inventory.Inventory;
+
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -12,5 +15,11 @@ public class Main {
         game.setPlatform("Console");
 
         game.showDetails();
+        System.out.println("-----------------");
+
+        Inventory inventory = new Inventory();
+        inventory.addGame(game);
+        inventory.showGame(0);
+        inventory.showList();
     }
 }
