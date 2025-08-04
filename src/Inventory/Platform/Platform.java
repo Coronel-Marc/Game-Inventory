@@ -1,18 +1,18 @@
 package Inventory.Platform;
 
 public class Platform implements IPlatform{
-    private String name;
+    private String platform;
     private String company;
 
 
     /*-------------------- Getters and Setters --------------------*/
 
     /*--- Name ---*/
-    public String getName() {
-        return name;
+    public String getPlatform() {
+        return platform;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setPlatform(String platform) {
+        this.platform = platform;
     }
 
     /*--- Company ---*/
@@ -30,7 +30,7 @@ public class Platform implements IPlatform{
         """
         Platform: %s
         Company: %s
-        """,name,company
+        """, platform,company
         );
 
     }

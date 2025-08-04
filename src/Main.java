@@ -1,5 +1,4 @@
 import Inventory.Game.Game;
-import Inventory.Platform.Platform;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -9,13 +8,9 @@ public class Main {
         game.setName("Midnight 3");
         game.setGenre("Racing");
         game.setPrice(12.5);
+        game.setCompany("EA GAMES");
+        game.setPlatform("Console");
 
         game.showDetails();
-
-        Platform platform = new Platform();
-        platform.setCompany("EA Games");
-        platform.setName("PC");
-        platform.showPlatform();
-
     }
 }

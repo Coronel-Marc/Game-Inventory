@@ -1,6 +1,8 @@
 package Inventory.Game;
 
-public class Game implements IGame{
+import Inventory.Platform.Platform;
+
+public class Game extends Platform implements IGame {
     private String name;
     private String genre;
     private double price;
@@ -40,7 +42,9 @@ public class Game implements IGame{
                 Name: %s
                 Genre: %s
                 Price: %.2f
-                """,name, genre, price
+                Platform: %s
+                Company: %s
+                """,name, genre, price, getPlatform(), getCompany()
         );
     }
 }
