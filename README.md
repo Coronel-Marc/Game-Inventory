@@ -1,1 +1,3 @@
-# This repo is a Inventory of a game but using OOP
+# This repo is an Inventory of a game but using OOP
+
+## 
