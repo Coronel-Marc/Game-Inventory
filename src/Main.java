@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Inventory inventory = new Inventory();
+
         Game game = new Game();
         game.setName("Midnight 3");
         game.setGenre("Racing");
@@ -42,10 +44,12 @@ public class Main {
             switch (option){
                 case 1:
                     //inventory
+                    System.out.println("Type the name of the game");
+                    //I need to save the game in the memory... How can I do that?
 
             }
         }
-        Inventory inventory = new Inventory();
+
         inventory.addGame(game);
         inventory.addGame(game2);
         System.out.println(inventory.showGame(0));
