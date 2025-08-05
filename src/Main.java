@@ -1,12 +1,14 @@
 import Inventory.Game.Game;
 import Inventory.Inventory;
 
+import java.util.Scanner;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Game game = new Game();
         game.setName("Midnight 3");
         game.setGenre("Racing");
@@ -24,11 +26,29 @@ public class Main {
 
         game.showDetails();
         System.out.println("-----------------");
+        boolean loop = true;
+        while(loop){
+            System.out.println("Inventory of games");
+            System.out.print("Please, choose an option");
+            System.out.printf(
+                    """
+                    1. Add new game
+                    2. Remove a game
+                    3. See all the games
+                    0. Exit
+                    """
+            );
+            int option = sc.nextInt();
+            switch (option){
+                case 1:
+                    //inventory
 
+            }
+        }
         Inventory inventory = new Inventory();
         inventory.addGame(game);
         inventory.addGame(game2);
-        //System.out.println(inventory.showGame(0));
+        System.out.println(inventory.showGame(0));
         System.out.println(inventory.showList());
     }
 }
